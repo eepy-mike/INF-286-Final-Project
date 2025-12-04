@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arngren - About Us</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #ffffff;
+      padding-top: 60px;
+    }
+
+    .top-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 100;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .logo span {
+      color: #e50914;
+    }
+
+    .top-nav nav a {
+      color: #ffffff;
+      margin-left: 16px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .top-nav nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      height: 75vh;
+      background: url('https://s7d9.scene7.com/is/image/roberthalfintl/the-value-of-teamwork-in-the-workplace-blog-RH-05-23-24.jpg:Large-1x?fmt=webp-alpha') center/cover no-repeat fixed;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 10%;
+      color: #ffffff;
+    }
+
+    .hero-content {
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 24px;
+      border-radius: 8px;
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .primary-btn {
+      width: auto;
+      background: #e50914;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 4px;
+      font-weight: bold;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .primary-btn:hover {
+      background: #f6121d;
+    }
+
+    .section {
+      padding: 60px 10%;
+      background: #000;
+      color: #ffffff;
+    }
+
+    .section-alt {
+      background: #111;
+    }
+
+    .section-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      margin-bottom: 24px;
+    }
+
+    .redesign-list {
+      list-style: none;
+      margin: 16px 0 12px;
+      padding: 0;
+    }
+
+    .redesign-list li {
+      margin-bottom: 10px;
+      padding-left: 18px;
+      position: relative;
+      font-size: 15px;
+    }
+
+    .redesign-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #ffffff;
+    }
+
+    .note {
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .team-card {
+      background: #181818;
+      border-radius: 8px;
+      padding: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.3s ease;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    .team-card h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .team-card .role {
+      font-size: 14px;
+      color: #e50914;
+      margin-bottom: 10px;
+    }
+
+    .team-card .bio {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .team-card.active {
+      opacity: 1;
+      transform: translateY(0);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
+    }
+
+    .site-footer {
+      text-align: center;
+      padding: 16px;
+      border-top: 1px solid #222;
+      font-size: 13px;
+      color: #777;
+      background: #000;
+    }
+
+    
+      .section {
+        padding: 60px 16px;
+      }
+
+      .top-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 16px;
+        align-items: flex-start;
+      }
+
+      .top-nav nav {
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">Arngren<span>.net</span></div>
+    <nav>
+      <a href="#story">Our Story</a>
+      <a href="#redesign">The Redesign</a>
+      <a href="#team">Meet the Team</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>About Our Arngren Redesign</h1>
+        <p>
+          We took the original, chaotic Arngren website and rebuilt it into a cleaner, easier to use shopping experience while still keeping the weird, fun personality that makes Arngren unique.
+        </p>
+        <button id="scrollToRedesign" class="primary-btn">See What We Changed</button>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <div class="section-inner">
+        <h2>Our Story</h2>
+        <p>
+          This project started with a simple challenge: could we redesign Arngren in a way that feels
+          modern and user-friendly, but still respects the original “everything everywhere” vibe of the site?
+        </p>
+        <p>
+          We focused on creating clear sections, readable text, and a layout that works on laptops and phones.
+          Our goal was to keep the energy of the original, but remove the confusion.
+        </p>
+      </div>
+    </section>
+
+    <section id="redesign" class="section section-alt">
+      <div class="section-inner">
+        <h2>What We Redesigned</h2>
+        <ul class="redesign-list">
+          <li><strong>Sign In / Sign Up Flow:</strong> Clean, centered blocks with clear calls to tell you where you’re supposed to go.</li>
+          <li><strong>Visual Hierarchy:</strong> Big headings, readable text, and simplified content blocks.</li>
+          <li><strong>Consistent Styling:</strong> We have a general theme, buttons, and form fields.</li>
+          <li><strong>Responsive Layout:</strong> Pages that look good on both desktop and mobile screens. We also removed most of the clutter from the website.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="section-inner">
+        <h2>Meet the Team</h2>
+        <p class="section-intro">
+          Here is the group behind redesigning the website.
+        </p>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <h3>Bryce</h3>
+            <p class="role">Login/Signup, About Us page</p>
+            <p class="bio">
+              Focused on creating the sign-in, sign-up, and About Us page.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <h3>Micheal</h3>
+            <p class="role">Main Page</p>
+            <p class="bio">
+              Helped organize the layout and spacing so the pages feel simple and easy to scan.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <h3>Maryan</h3>
+            <p class="role">Cart Page</p>
+            <p class="bio">
+              Implemented a responsive Cart Page that allows you to check out your products.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <h3>Mohamed</h3>
+            <p class="role">Checkout Page/Product Catalog</p>
+            <p class="bio">
+              Made a Checkout Page and Product Catalog with clear, user-friendly messaging.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Arngren Redesign Project. All rights reserved.</p>
+  </footer>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("scrollToRedesign");
+      const redesignSection = document.getElementById("redesign");
+
+      if (btn && redesignSection) {
+        btn.addEventListener("click", function () {
+          redesignSection.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+
+      const cards = document.querySelectorAll(".team-card");
+
+      function handleScroll() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        cards.forEach(card => {
+          const rect = card.getBoundingClientRect();
+          if (rect.top < triggerBottom) {
+            card.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
+    });
+  </script>
+</body>
+</html>
