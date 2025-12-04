@@ -1,0 +1,141 @@
+body {
+  font-family: Arial;
+  background: #f7f7f7;
+  margin: 0;
+}
+
+.top {
+  background: #232f3e;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+.cart-items-section, .summary-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-items-section h2, .summary-section h2 {
+  margin-top: 0;
+  color: #232f3e;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.qty-controls button {
+  padding: 4px 8px;
+  background: #ff9900;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.summary-section p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.summary-section hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.checkout-btn {
+  width: 100%;
+  background: #ff9900;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.products-section {
+  margin: 20px;
+}
+
+.products-section h2 {
+  color: #232f3e;
+}
+
+.items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+}
+
+.add {
+  background: #ff9900;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  cursor: pointer;
+  color: white;
+}
