@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arngren - Sign In</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('https://arngrenn.wordpress.com/wp-content/uploads/2018/11/cropped-hde-brum-mstor2.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+
+  .wrapper {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    width: 500px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .header h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 32px;
+  }
+
+  .field-group {
+    margin-bottom: 15px;
+  }
+
+  .field-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+  }
+
+  .primary-btn {
+    width: 100%;
+    background: #e50914;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .row-inline {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .row-inline label {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .row-inline a {
+    color: #b3b3b3;
+  }
+
+  .row-inline a:hover {
+    text-decoration: underline;
+  }
+
+  .signup-link {
+    margin-top: 20px;
+    color: #b3b3b3;
+    font-size: 15px;
+  }
+
+  .signup-link a {
+    color: white;
+    font-weight: bold;
+  }
+</style>
+
+</head>
+<body>
+
+<div class="wrapper">
+  <header class="header">
+    <h1>Welcome to Arngren</h1>
+    <p>Log in to your account or create a new one to start saving explored gadgets.</p>
+  </header>
+
+  <div class="content">
+    <form id="login-form" class="active" action="#" method="post">
+
+      <div class="field-group">
+        <input
+          type="email"
+          id="login-email"
+          name="email"
+          placeholder="Email or mobile number"
+          required
+        />
+      </div>
+
+      <div class="field-group">
+        <label for="login-password">Password</label>
+        <input
+          type="password"
+          id="login-password"
+          name="password"
+          placeholder="Password (min 6 Characters)"
+          minlength="6"
+          required
+        />
+      </div>
+
+      <button class="primary-btn" type="submit">Sign In</button>
+
+      <div class="row-inline">
+        <label>
+          <input type="checkbox" name="remember" />
+          Remember me
+        </label>
+        <a href="https://codepen.io/B-Jones-the-bashful/pen/EaKQgab">Forgot password?</a>
+      </div>
+
+      <p class="signup-link">
+        New to Arngren? 
+        <a href="https://codepen.io/B-Jones-the-bashful/pen/EaKQgab">Sign up now.</a>
+      </p>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
